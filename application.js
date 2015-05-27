@@ -2,7 +2,7 @@
 (function() {
   $(document).ready(function() {
     var $searchBox, $submitButton, baseURL;
-    baseURL = 'https://marginal-review-api.herokuapp.com/api/v1/reviews';
+    baseURL = 'api/reviews';
     $searchBox = $('#searchBox');
     $submitButton = $('#submit');
     return $submitButton.click(function(event) {

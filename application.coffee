@@ -1,5 +1,5 @@
 $(document).ready ->
-    baseURL = 'https://marginal-review-api.herokuapp.com/api/v1/reviews'
+    baseURL = 'api/reviews'
     $searchBox = $('#searchBox')
     $submitButton = $('#submit')
     $submitButton.click (event) ->
