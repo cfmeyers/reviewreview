@@ -40,7 +40,7 @@
       $contentDiv.empty();
       url = buildQuery();
       return $.get(url, function(data) {
-        var $item, $row, i, index, item, j, len, len1, ref, results, rows;
+        var $item, $row, i, index, item, j, len, len1, ref, rows;
         rows = buildRows(data.results.length, 4);
         ref = data.results;
         for (index = i = 0, len = ref.length; i < len; index = ++i) {
@@ -48,12 +48,13 @@
           $item = buildItemDiv(item);
           rows[Math.floor(index / 4)].append($item);
         }
-        results = [];
         for (j = 0, len1 = rows.length; j < len1; j++) {
           $row = rows[j];
-          results.push($contentDiv.append($row));
+          $contentDiv.append($row);
         }
-        return results;
+        if (data.results.length === 0) {
+          return $contentDiv.append($("<div>Sorry, your search didn't return anything</div>"));
+        }
       });
     });
   });

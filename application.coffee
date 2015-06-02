@@ -29,6 +29,9 @@ $(document).ready ->
                 rows[index//4].append($item)
             $contentDiv.append($row) for $row in rows
 
+            if data.results.length == 0
+                $contentDiv.append($("<div>Sorry, your search didn't return anything</div>"))
+
 
 
 buildRows = (numItems, columnCount) ->
