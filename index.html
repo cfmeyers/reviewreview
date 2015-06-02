@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title></title>
-    <link rel="stylesheet" href="style.css">
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="application.js"></script>
-</head>
-<body>
-    <form>
-        <input type="text" id="searchBox">
-        <button id="submit">Submit</button>
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>The Review Review</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="application.js"></script>
+    </head>
+    <body>
+
+
+        <div class="container">
+            <h1>Review<span id='titleContrast'>Review</span></h1>
+            <h2>Connect to book and movie reviews on <a href='http://marginalrevolution.com/'>marginalrevolution.com</a></h2>
+            <form>
+                <fieldset>
+
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <input type="text" name="genre" id="searchBoxGenre" placeholder="genre" class="form-control input-md">
+                        </div>
+
+                        <div class="col-md-3">
+                            <input type="text" name="title" id="searchBoxTitle" placeholder="title" class="form-control input-md">
+                        </div>
+
+                        <div class="col-md-3">
+                            <input type="text" name="title" id="searchBoxAuthor" placeholder="author/director" class="form-control input-md">
+                        </div>
+
+                    </div>
+
+
+                    <div class="button-row">
+                        <button id="submit" class="btn btn-large btn-default">Search</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div> <!-- end header div -->
+
+
+        <div class="container" id="content">
+        </div>
+
+
+    </body>
 </html>
 
