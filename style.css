@@ -40,7 +40,6 @@ form {
 
 input{
     border-radius: 10px !important;
-    /* margin-top: 10px; */
 }
 
 #checkboxes{
@@ -54,7 +53,6 @@ input{
 
 .item{
     text-align:center;
-    /* border: 10px solid black; */
     height: 420px;
 }
 
@@ -70,4 +68,44 @@ img{
     height: auto;
     border-radius: 10px;
 }
+
+
+.tt-input, 
+.tt-hint {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.tt-input { 
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+    color: #999;
+}
+
+.tt-menu { 
+    /* width: 422px; */
+    margin-top: 12px;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    cursor: pointer;
+}
+
+.tt-suggestion {
+    padding: 3px 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.tt-suggestion.tt-cursor { 
+    color: #fff;
+    background-color: rgb( 95, 174, 87);
+}
+
+
 
